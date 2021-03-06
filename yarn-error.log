@@ -1,0 +1,51 @@
+Arguments: 
+  /home/nolan/.asdf/installs/nodejs/15.1.0/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/nolan/.asdf/installs/nodejs/15.1.0/bin:/home/nolan/.asdf/installs/nodejs/15.1.0/.npm/bin:.git/safe/../../bin:/home/nolan/.asdf/shims:/home/nolan/.asdf/bin:/home/nolan/.bin:/usr/local/sbin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin:/home/nolan/.fzf/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  15.1.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/nolan/ui-reflex/package.json: Unexpected string in JSON at position 249
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "ui-reflex",
+    "version": "1.0.0",
+    "description": "Adds interactivity to ui",
+    "main": "dist/ui-reflex.mjs",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Nolan Tait",
+    "license": "MIT"
+    "devDependencies": {
+      "microbundle": "^0.8.4"
+    },
+    "peerDependencies": {
+      "stimulus": ">=2.0.0 <3"
+    },
+    "scripts": {
+      "build": "microbundle",
+      "dev": "microbundle watch"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

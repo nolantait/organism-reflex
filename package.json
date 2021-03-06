@@ -2,10 +2,20 @@
   "name": "ui-reflex",
   "version": "1.0.0",
   "description": "Adds interactivity to ui",
-  "main": "index.js",
+  "main": "dist/ui-reflex.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nolan Tait",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.8.4"
+  },
+  "peerDependencies": {
+    "stimulus": ">=2.0.0 <3"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  }
 }
