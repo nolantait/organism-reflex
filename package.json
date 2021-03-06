@@ -2,20 +2,22 @@
   "name": "ui-reflex",
   "version": "1.0.0",
   "description": "Adds interactivity to ui",
-  "main": "dist/ui-reflex.mjs",
+  "main": "dist/ui-reflex.esm.js",
+  "source": "src/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "author": "Nolan Tait",
   "license": "MIT",
   "devDependencies": {
-    "microbundle": "^0.8.4"
+    "microbundle": "^0.8.4",
+    "stimulus": ">=2.0.0 <3"
   },
   "peerDependencies": {
     "stimulus": ">=2.0.0 <3"
   },
-  "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+  "dependencies": {
+    "stimulus-use": "^0.23.0"
   }
 }
