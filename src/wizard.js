@@ -31,7 +31,7 @@ export default class extends Controller {
 
   _toggleCurrentStep() {
     this.stepTargets.forEach((el) => {
-      if (this.position(el) === this.stepPositionValue) {
+      if (this._position(el) === this.stepPositionValue) {
         el.classList.add(this.currentStepClass)
       } else {
         el.classList.remove(this.currentStepClass)
@@ -65,7 +65,7 @@ export default class extends Controller {
 
   _showCurrentContent(targets) {
     this.contentTargets.forEach((el) => {
-      if (this.position(el) === this.stepPositionValue) {
+      if (this._position(el) === this.stepPositionValue) {
         el.classList.remove(this.hiddenClass)
       } else {
         el.classList.add(this.hiddenClass)
