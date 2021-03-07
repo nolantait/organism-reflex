@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Adds interactivity to ui",
   "main": "dist/ui-reflex.esm.js",
-  "source": "src/index.mjs",
+  "source": "src/index.js",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
@@ -12,12 +12,15 @@
   "license": "MIT",
   "devDependencies": {
     "microbundle": "^0.8.4",
-    "stimulus": ">=2.0.0 <3"
+    "stimulus": ">=2.0.0 <3",
+    "stimulus-use": "^0.23.0"
   },
   "peerDependencies": {
-    "stimulus": ">=2.0.0 <3"
+    "stimulus": ">=2.0.0 <3",
+    "stimulus-use": "^0.23.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.13.9",
     "stimulus-use": "^0.23.0"
   }
 }
