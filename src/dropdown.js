@@ -37,7 +37,6 @@ export default class extends Controller {
   }
 
   clickOutside(event) {
-    event.preventDefault()
     this.expandedValue = false
   }
 
