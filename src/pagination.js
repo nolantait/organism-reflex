@@ -15,11 +15,11 @@ export default class extends Controller {
     this._hideWindows()
   }
 
-  next() {
+  next(event) {
     this.windowPositionValue += 1
   }
 
-  previous() {
+  previous(event) {
     this.windowPositionValue -= 1
   }
 

@@ -4,6 +4,14 @@ import Wizard from './wizard.js'
 import Selectable from './selectable.js'
 import Sortable from './sortable.js'
 import Collapsable from './collapsable.js'
+import Tooltip from './tooltip.js'
 
-
-export { Dropdown, Pagination, Wizard, Selectable, Sortable, Collapsable }
+export {
+  Dropdown,
+  Pagination,
+  Wizard,
+  Selectable,
+  Sortable,
+  Collapsable,
+  Tooltip
+}
