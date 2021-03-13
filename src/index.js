@@ -5,6 +5,7 @@ import Selectable from './selectable.js'
 import Sortable from './sortable.js'
 import Collapsable from './collapsable.js'
 import Tooltip from './tooltip.js'
+import Notification from './notification.js'
 
 export {
   Dropdown,
@@ -13,5 +14,6 @@ export {
   Selectable,
   Sortable,
   Collapsable,
-  Tooltip
+  Tooltip,
+  Notification
 }
