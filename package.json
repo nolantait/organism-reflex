@@ -1,8 +1,8 @@
 {
-  "name": "ui-reflex",
+  "name": "organism-reflex",
   "version": "1.0.0",
-  "description": "Adds interactivity to ui",
-  "main": "dist/ui-reflex.esm.js",
+  "description": "Adds interactivity to organism-ui",
+  "main": "dist/organism-reflex.esm.js",
   "source": "src/index.js",
   "scripts": {
     "build": "microbundle",
