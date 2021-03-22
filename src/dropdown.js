@@ -10,10 +10,9 @@ export default class extends Controller {
   }
 
   connect() {
-    useClickOutside(this)
-
     switch(this.modeValue) {
       case 'click':
+        useClickOutside(this)
         break
       case 'hover':
         useHover(this)
@@ -21,12 +20,13 @@ export default class extends Controller {
       default:
         break
     }
+
+    this.expandedValue ?
+      this._expand() :
+      this._collapse()
   }
 
   toggle(event) {
-    event.preventDefault()
-    event.stopImmediatePropagation()
-
     this.expandedValue = !this.expandedValue
   }
 

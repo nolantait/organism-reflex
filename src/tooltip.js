@@ -24,9 +24,6 @@ export default class extends Controller {
   }
 
   toggle(event) {
-    event.preventDefault()
-    event.stopImmediatePropagation()
-
     this.expandedValue = !this.expandedValue
   }
 
