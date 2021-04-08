@@ -1,6 +1,6 @@
 {
   "name": "organism-reflex",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Adds interactivity to organism-ui",
   "main": "dist/organism-reflex.esm.js",
   "source": "src/index.js",
