@@ -3,9 +3,10 @@ import Sortable from 'sortablejs'
 import { Controller } from "stimulus"
 
 export default class extends Controller {
+  static classes = [ 'handle' ]
   static values = {
     inputName: String,
-    updateUrl: String
+    updateUrl: String,
   }
 
   initialize() {
@@ -25,7 +26,7 @@ export default class extends Controller {
 
   onDragEnd({ item, newIndex }) {
     const data = new FormData()
-    data.append(this.inputNameValue, newIndex + 1)
+    data.append(this.inputNameValue, this.sortable.toArray())
 
     Rails.ajax({
       url: this.updateUrlValue,
@@ -37,7 +38,7 @@ export default class extends Controller {
   get options() {
     return {
       animation: 150,
-      handle: '.ui-sortable-handle',
+      handle: `.${this.handleClass}`,
       onEnd: this.onDragEnd
     }
   }
